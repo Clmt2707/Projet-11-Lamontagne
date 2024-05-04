@@ -195,9 +195,38 @@ footer {
 #main .section1 .btn {
   margin: 50px 0 90px;
 }
-
-img {
-  width: 50%;
+#main .section2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid rgb(209, 209, 209);
+}
+@media screen and (max-width: 700px) {
+  #main .section2 {
+    grid-template-columns: 1fr;
+  }
+}
+#main .section2 .left-part,
+#main .section2 .right-part {
+  padding: 50px;
+}
+#main .section2 span {
+  font-size: 0.75rem;
+}
+#main .section2 h3 {
+  margin: 20px 0;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+#main .section2 p {
+  text-align: left;
+  line-height: 30px;
+  margin: 30px 0;
+  font-size: 0.8rem;
+}
+#main .section2 .left-part {
+  border-right: 1px solid rgb(209, 209, 209);
 }
 
 * {
